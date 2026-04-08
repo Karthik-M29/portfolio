@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Karthik M | VLSI Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#050816;
+  color:#e5e7eb;
+  overflow-x:hidden;
+}
+
+/* ADVANCED CHIP BACKGROUND */
+body::before{
+  content:"";
+  position:fixed;
+  width:200%;
+  height:200%;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(59,130,246,0.15), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(239,68,68,0.15), transparent 40%),
+    repeating-linear-gradient(90deg, rgba(59,130,246,0.07) 0px, rgba(59,130,246,0.07) 2px, transparent 2px, transparent 60px),
+    repeating-linear-gradient(0deg, rgba(239,68,68,0.07) 0px, rgba(239,68,68,0.07) 2px, transparent 2px, transparent 60px);
+  animation: move 20s linear infinite;
+  z-index:-1;
+}
+
+@keyframes move{
+  from{transform:translate(0,0)}
+  to{transform:translate(-120px,-120px)}
+}
+
+header{
+  text-align:center;
+  padding:40px 20px;
+  border-bottom:1px solid #1f2937;
+}
+
+.profile-pic{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:3px solid #3b82f6;
+  margin-bottom:15px;
+  object-fit:cover;
+  box-shadow:0 0 15px rgba(59,130,246,0.7);
+}
+
+header h1{
+  font-family:'Orbitron';
+  font-size:2.2rem;
+  color:#3b82f6;
+}
+
+header p{
+  color:#f87171;
+  margin-top:5px;
+}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+h2{
+  color:#3b82f6;
+  margin-bottom:25px;
+  border-left:4px solid #ef4444;
+  padding-left:10px;
+}
+
+.task{
+  position:relative;
+  background:linear-gradient(145deg,#0b1220,#111827);
+  border:1px solid #1f2937;
+  border-radius:15px;
+  padding:25px;
+  margin-bottom:40px;
+  transition:0.4s;
+  transform:translateY(40px);
+  opacity:0;
+}
+
+.task.show{
+  transform:translateY(0);
+  opacity:1;
+}
+
+.task:hover{
+  transform:scale(1.02);
+  box-shadow:0 0 25px rgba(59,130,246,0.5),0 0 20px rgba(239,68,68,0.3);
+}
+
+/* DATE BADGE RIGHT SIDE */
+.meta{
+  position:absolute;
+  top:15px;
+  right:20px;
+  font-size:0.75rem;
+  background:linear-gradient(90deg,#3b82f6,#ef4444);
+  padding:5px 10px;
+  border-radius:20px;
+  color:#fff;
+}
+
+.images{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+  margin-top:15px;
+}
+
+img{
+  width:100%;
+  border-radius:10px;
+  border:1px solid #1f2937;
+  transition:0.3s;
+}
+
+img:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 15px rgba(59,130,246,0.6);
+}
+
+p{margin-top:10px;font-size:0.9rem;color:#d1d5db}
+
+/* CONTACT CENTER */
+.contact-center{
+  text-align:center;
+  margin-top:40px;
+}
+
+.contact-center a{
+  color:#3b82f6;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+.contact-center a:hover{
+  text-decoration:underline;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  border-top:1px solid #1f2937;
+  color:#9ca3af;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="file_0000000027c072068633cf9d6ceb0872.png" class="profile-pic">
+  <h1>Karthik M</h1>
+  <p>BTech ECE | 2023 - 2027 Batch</p>
+  <p>Jeppiaar University</p>
+</header>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="task">
+    <h3>Satellite Swarm Communication System</h3>
+    <div class="meta">2026 | Arduino IDE</div>
+
+    <p>A satellite swarm communication system is a network of multiple small satellites that work together to transmit data using a multi-hop communication method, where each satellite acts as both a transmitter and receiver. In this project, components like Arduino UNO, nRF24L01 RF modules, AMS1117 regulator, capacitor, LED, and an LCD (for ground station) are used to simulate real satellite behavior. The working principle is that data is sent from one node and forwarded through intermediate nodes until it reaches the ground station, with the last active node responsible for final transmission. If any node fails, the system automatically reroutes the data through another available node, ensuring fault-tolerant and continuous communication. The main function of this system is to provide reliable data transfer without interruption, similar to modern satellite networks. The unique aspect of this project is its self-recovery capability, dynamic routing, and decentralized operation, unlike traditional single-satellite systems. In the future, this system can be enhanced with long-range communication, IoT sensors, and intelligent routing algorithms, making it closer to real-world satellite swarm applications used by organizations like NASA and ESA.</p>
+
+    <div class="images">
+      <img src="project1.png">
+      <img src="project2.png">
+      <img src="project3.png">
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <h2>Daily Verilog Tasks</h2>
+
+  <div class="task">
+    <h3>Day 01 - AND Gate</h3>
+    <div class="meta">06 Apr 2026 | EDA Playground</div>
+
+    <p>Explanation:
+The AND gate produces an output of 1 only when both inputs are 1. In this implementation, the design is written in Verilog and simulated using EDA Playground with a testbench that applies all input combinations.
+
+Waveform Observation:
+The waveform shows that:
+
+When inputs are 00, 01, 10 → Output = 0
+When inputs are 11 → Output = 1
+
+This confirms the AND gate is working correctly according to its truth table.</p>
+
+    <div class="images">
+      <img src="Edit code - EDA Playground - EDA Playground 06-04-2026 18_43_34.png">
+      <img src="Edit code - EDA Playground - EDA Playground 06-04-2026 18_43_46.png">
+      <img src="Edit code - EDA Playground - EDA Playground 06-04-2026 18_44_44.png">
+    </div>
+  </div>
+
+  <div class="task">
+    <h3>Day 02 - OR Gate</h3>
+    <div class="meta">07 Apr 2026 | EDA Playground</div>
+
+    <p>Explanation:
+The OR gate outputs logic 1 when at least one input is HIGH (1). The Verilog design was implemented and simulated in EDA Playground using a testbench that applies all possible input combinations (00, 01, 10, 11) over time.
+
+Waveform:
+From the waveform, the output remains LOW (0) only when both inputs are 0. For all other cases (01, 10, 11), the output transitions to HIGH (1). The timing of input changes and corresponding output confirms correct logical behavior and proper propagation in the simulation.</p>
+
+    <div class="images">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_46.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_16_21.png">
+    </div>
+  </div>
+
+   <div class="task">
+    <h3>Day 03 - NOT Gate</h3>
+    <div class="meta">08 Apr 2026 | EDA Playground</div>
+
+    <p>Explanation:
+The OR gate outputs logic 1 when at least one input is HIGH (1). The Verilog design was implemented and simulated in EDA Playground using a testbench that applies all possible input combinations (00, 01, 10, 11) over time.
+
+Waveform:
+From the waveform, the output remains LOW (0) only when both inputs are 0. For all other cases (01, 10, 11), the output transitions to HIGH (1). The timing of input changes and corresponding output confirms correct logical behavior and proper propagation in the simulation.</p>
+
+    <div class="images">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_46.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_16_21.png">
+    </div>
+  </div>
+
+</section>
+
+
+
+<section class="contact-center">
+  <p>
+    📧 <a href="mailto:karthik915062@gmail.com">Email</a> |
+    📞 <a href="tel:+919150626914">Contact</a> |
+    📍 Chennai |
+    🔗 <a href="https://www.linkedin.com/in/karthik-m-8770462b2?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Karthik M | VLSI Portfolio</p>
+</footer>
+
+<script>
+const tasks=document.querySelectorAll('.task');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+});
+tasks.forEach(t=>observer.observe(t));
+</script>
+
+</body>
+</html>
+
+
