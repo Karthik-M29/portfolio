@@ -230,11 +230,8 @@ From the waveform, the output remains LOW (0) only when both inputs are 0. For a
     <h3>Day 03 - NOT Gate</h3>
     <div class="meta">08 Apr 2026 | EDA Playground</div>
 
-    <p>Explanation:
-The OR gate outputs logic 1 when at least one input is HIGH (1). The Verilog design was implemented and simulated in EDA Playground using a testbench that applies all possible input combinations (00, 01, 10, 11) over time.
-
-Waveform:
-From the waveform, the output remains LOW (0) only when both inputs are 0. For all other cases (01, 10, 11), the output transitions to HIGH (1). The timing of input changes and corresponding output confirms correct logical behavior and proper propagation in the simulation.</p>
+    <p>A NOT gate (inverter) is a basic digital logic gate that produces the exact opposite output of its input, meaning when the input is 0 the output becomes 1, and when the input is 1 the output becomes 0;
+       in EDA Playground waveform view, this behavior is clearly seen as the output signal always being the inverse of the input signal over time, so whenever the input waveform goes high the output goes low and vice versa, making it easy to visually verify that the gate is correctly inverting the signal.</p>
 
     <div class="images">
       <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
@@ -247,11 +244,8 @@ From the waveform, the output remains LOW (0) only when both inputs are 0. For a
     <h3>Day 04 - NAND Gate</h3>
     <div class="meta">09 Apr 2026 | EDA Playground</div>
 
-    <p>Explanation:
-The OR gate outputs logic 1 when at least one input is HIGH (1). The Verilog design was implemented and simulated in EDA Playground using a testbench that applies all possible input combinations (00, 01, 10, 11) over time.
-
-Waveform:
-From the waveform, the output remains LOW (0) only when both inputs are 0. For all other cases (01, 10, 11), the output transitions to HIGH (1). The timing of input changes and corresponding output confirms correct logical behavior and proper propagation in the simulation.</p>
+    <p>A NAND gate (NOT AND) is a digital logic gate that gives the opposite output of an AND gate, meaning the output is 0 only when all inputs are 1, and for all other input combinations the output is 1; 
+      in EDA Playground waveform, this is seen as the output staying HIGH most of the time and going LOW only when all input signals are HIGH at the same moment.</p>
 
     <div class="images">
       <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
@@ -260,15 +254,13 @@ From the waveform, the output remains LOW (0) only when both inputs are 0. For a
     </div>
   </div>
 
+  
      <div class="task">
     <h3>Day 05 - NOR Gate</h3>
     <div class="meta">10 Apr 2026 | EDA Playground</div>
 
-    <p>Explanation:
-The OR gate outputs logic 1 when at least one input is HIGH (1). The Verilog design was implemented and simulated in EDA Playground using a testbench that applies all possible input combinations (00, 01, 10, 11) over time.
-
-Waveform:
-From the waveform, the output remains LOW (0) only when both inputs are 0. For all other cases (01, 10, 11), the output transitions to HIGH (1). The timing of input changes and corresponding output confirms correct logical behavior and proper propagation in the simulation.</p>
+    <p>A NOR gate (NOT OR) is a digital logic gate that gives the opposite output of an OR gate, meaning the output is 1 only when all inputs are 0, and if any input becomes 1 the output becomes 0;
+      in EDA Playground waveform, the output remains LOW whenever any input is HIGH and goes HIGH only when all input signals are LOW.</p>
 
     <div class="images">
       <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
@@ -276,6 +268,37 @@ From the waveform, the output remains LOW (0) only when both inputs are 0. For a
       <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_16_21.png">
     </div>
   </div>
+
+       <div class="task">
+    <h3>Day 06 - XOR Gate</h3>
+    <div class="meta">11 Apr 2026 | EDA Playground</div>
+
+    <p>An XOR gate (Exclusive OR) is a digital logic gate that produces an output of 1 only when the inputs are different and 0 when the inputs are the same;
+      in EDA Playground waveform, this appears as the output going HIGH whenever the input signals differ and going LOW when both inputs are either HIGH or LOW together.</p>
+
+    <div class="images">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_46.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_16_21.png">
+    </div>
+  </div>
+
+  
+       <div class="task">
+    <h3>Day 07 - Half Adder (First Real Circuit)</h3>
+    <div class="meta">12 Apr 2026 | EDA Playground</div>
+
+    <p></p>
+
+    <div class="images">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_46.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_16_21.png">
+    </div>
+  </div>
+
+
+
 
 </section>
 
