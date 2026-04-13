@@ -288,7 +288,22 @@ From the waveform, the output remains LOW (0) only when both inputs are 0. For a
     <h3>Day 07 - Half Adder (First Real Circuit)</h3>
     <div class="meta">12 Apr 2026 | EDA Playground</div>
 
-    <p></p>
+    <p>A Half Adder is a basic digital circuit used to add two single-bit binary inputs (A and B) and produce two outputs: Sum (S) and Carry (C), where the Sum is obtained using an XOR operation (S = A ⊕ B) and the Carry is obtained using an AND operation (C = A · B);
+       in EDA Playground waveform, when you simulate all input combinations over time, you will observe that the Sum waveform goes HIGH only when inputs are different (like 0,1 or 1,0), while the Carry waveform goes HIGH only when both inputs are HIGH (1,1), so visually the Sum toggles based on input difference and Carry produces a pulse only when both inputs rise together, clearly showing the addition behavior.</p>
+
+    <div class="images">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_46.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_16_21.png">
+    </div>
+  </div>
+
+         <div class="task">
+    <h3>Day 08 - Full Adder</h3>
+    <div class="meta">13 Apr 2026 | EDA Playground</div>
+
+    <p>A Full Adder is a digital circuit used to add three single-bit inputs—A, B, and Carry-in (Cin)—and produce two outputs: Sum (S) and Carry-out (Cout), where the Sum is calculated using XOR operations (S = A ⊕ B ⊕ Cin) and the Carry-out is generated when any two or more inputs are HIGH (Cout = AB + BCin + ACin);
+       in EDA Playground waveform, when you simulate different input combinations over time, you will observe that the Sum waveform goes HIGH when an odd number of inputs are HIGH, while the Carry-out waveform goes HIGH when at least two inputs are HIGH, so visually the Sum toggles based on odd parity and Carry-out produces pulses whenever multiple inputs overlap in HIGH state, clearly demonstrating the binary addition process.</p>
 
     <div class="images">
       <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
