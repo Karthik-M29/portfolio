@@ -313,6 +313,37 @@ From the waveform, the output remains LOW (0) only when both inputs are 0. For a
   </div>
 
 
+  <div class="task">
+    <h3>Day 09 - Ripple Carry Adder(RCA)</h3>
+    <div class="meta">14 Apr 2026 | EDA Playground</div>
+
+    <p>A Ripple Carry Adder is a multi-bit binary adder formed by connecting multiple full adders in series, where the carry-out of each stage becomes the carry-in of the next stage, causing the carry to “ripple” from the least significant bit (LSB) to the most significant bit (MSB);
+       in EDA Playground waveform, when inputs change, you can observe that the sum outputs of higher bits do not change instantly, instead they update only after the carry propagates through each full adder stage, creating a visible delay in the waveform from LSB to MSB, and this step-by-step carry propagation clearly shows why it is called a ripple carry adder and also highlights its slower speed compared to other adders.</p>
+
+    <div class="images">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_46.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_16_21.png">
+    </div>
+  </div>
+
+
+  
+  <div class="task">
+    <h3>Day 10 - Carry Lookahead Adder(CLA)</h3>
+    <div class="meta">15 Apr 2026 | EDA Playground</div>
+
+    <p>A Carry Lookahead Adder (CLA) is an advanced digital adder designed to overcome the delay of ripple carry adders by calculating carry signals in advance using generate (G) and propagate (P) concepts, where G = A·B and P = A ⊕ B, allowing all carry outputs to be determined in parallel instead of waiting for ripple propagation;
+       in EDA Playground waveform, when inputs change, you can observe that the sum and carry outputs update almost simultaneously across all bits, without the step-by-step delay seen in ripple carry adders, so the waveform shows minimal propagation delay and faster response, clearly demonstrating the high-speed performance of the CLA design.</p>
+
+    <div class="images">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_29.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_15_46.png">
+      <img src="Edit code - EDA Playground - EDA Playground 07-04-2026 10_16_21.png">
+    </div>
+  </div>
+
+
 
 
 </section>
